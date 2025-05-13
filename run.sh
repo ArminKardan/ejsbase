@@ -5,12 +5,14 @@ if [[ ! -d "/apps/main/repo/$block/.next" ]] || [[ "$rebuild" == "true" ]]; then
 
     echo 'Hi! Welcome to QE Node-Auto publisher!'
 
+    apk add ${packages}
+    
     git clone -n --filter=tree:0 --sparse ${giturl} /apps/main/repo
     sleep 1
     cd /apps/main/repo
     git sparse-checkout init --no-cone                        
     git sparse-checkout set /${block}/
-    git checkout master
+    git checkout main
 
     cp -r /apps/linux/node /apps/main/repo/${block}/node_modules
 
