@@ -5,7 +5,7 @@ if [[ ! -d "/apps/main/repo/$block/.next" ]] || [[ "$rebuild" == "true" ]]; then
 
     echo 'Hi! Welcome to QE Node-Auto publisher!'
 
-    apk add ${packages}
+    # apk add ${packages}
     
     git clone -n --filter=tree:0 --sparse ${giturl} /apps/main/repo
     sleep 1
