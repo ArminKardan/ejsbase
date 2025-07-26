@@ -7,9 +7,9 @@ RUN apk add --no-cache openssh bash git
 
 RUN apk add --no-cache libc6-compat chromium
 
-COPY ./linux/package.json /apps/main/package.json
+# COPY ./linux/package.json /apps/main/package.json
 
-COPY ./linux/node /apps/linux/node
+# COPY ./linux/node /apps/linux/node
 
 COPY ./run.sh /apps/run.sh
 
