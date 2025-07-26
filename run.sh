@@ -14,7 +14,7 @@ if [[ ! -d "/apps/main/repo/$block/.next" ]] || [[ "$rebuild" == "true" ]]; then
     git sparse-checkout set /${block}/
     git checkout main
 
-    cp -r /apps/linux/node /apps/main/repo/${block}/node_modules
+    # cp -r /apps/linux/node /apps/main/repo/${block}/node_modules
 
     sleep 1
 
