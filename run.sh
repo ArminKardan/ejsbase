@@ -33,7 +33,7 @@ cd /apps/main/repo/${block}
 
 node -e "setTimeout(async ()=>{ await fetch('http://127.0.0.1:3000/start') },10000)" &
 
-bun run buildlinux
+bun run startlinux
 
 echo 'Block crashed :-('
 
