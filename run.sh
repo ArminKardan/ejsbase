@@ -24,7 +24,7 @@ if [[ ! -d "/apps/main/repo/$block/.next" ]] || [[ "$rebuild" == "true" ]]; then
 
     echo 'Building XOXO ;)'
 
-    npm run buildlinux
+    bun run buildlinux
 
     sleep 1
 fi
@@ -33,7 +33,7 @@ cd /apps/main/repo/${block}
 
 node -e "setTimeout(async ()=>{ await fetch('http://127.0.0.1:3000/start') },10000)" &
 
-npm run startlinux
+bun run startlinux
 
 echo 'Block crashed :-('
 
