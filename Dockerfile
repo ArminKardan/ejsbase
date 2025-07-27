@@ -1,6 +1,6 @@
-# FROM docker.arvancloud.ir/node:23-alpine AS base
+FROM docker.arvancloud.ir/node:23-alpine AS base
 
-FROM docker.arvancloud.ir/oven/bun:canary-alpine AS base
+# FROM docker.arvancloud.ir/oven/bun:canary-alpine AS base
 
 # Install SSH server and other necessary packages
 RUN apk add --no-cache openssh bash git
